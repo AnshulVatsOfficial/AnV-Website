@@ -1,0 +1,640 @@
+/*Fonts*/
+
+
+
+/*Global CSS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --btn-bg-color: #e2e5fe;
+    --btn-fg-color: #4b61f8;
+    --heading-color: #2d405f;
+    --logo-color: #2d405f;
+    --nav-bg-color: #f6f7ff;
+    --font-color: #444444;
+    --h1-size: 3rem;
+    --h2-size: 1.90rem;
+    --h3-size: 1rem;
+    --text-size: 0.75rem;
+    --text-color: black;
+    --section-bg-color: #466393;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0.7rem;
+    background-color: rgb(231, 231, 231);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #3b4ef8;
+    transition: 0.3s;
+    height: 75px;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+h1{
+    font-weight: bold !important;
+    font-size: var(--h1-size) !important;
+    color: var(--heading-color);
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.25rem !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Krub", sans-serif;
+}
+
+a{
+    color: #3b4ef8;
+    text-decoration: none !important;
+}
+  
+a:hover{
+    color: #6c7afa !important;
+}
+
+/*Custom CSS*/
+
+.my_navbar{
+    position: fixed;
+    background-color: var(--nav-bg-color);
+    border-bottom: 2px solid #eceefe;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out !important;
+    transition: all 0.3s ease-out;
+}
+
+.my_navbar.on-scroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0,0,0,0.2);
+    transition: all 0.1s ease-in-out 0s;
+}
+
+#nav-toggler-btn{
+    border: none !important;
+}
+
+.nav_container{
+    position: relative;
+}
+
+.my_navbar .my_logo{
+    margin-left: 50px;
+    font-size: 2.25rem;
+    color: var(--logo-color) !important;
+    font-weight: bold;
+}
+
+.my_navbar .my_logo:hover{
+    color: var(--logo-color) !important;
+}
+
+.my_navbar .pos_right{
+    position: relative !important;
+    left: auto !important;
+}
+
+.pos_right li{
+    margin: 0px 20px !important;
+}
+
+.my_navbar ul li a{
+    font-size: var(--h3-size);
+    font-weight: bold;
+}
+
+.get-started-btn{
+    margin-right: 50px;
+}
+
+.get-started-btn,
+.get-started-btn:focus{
+    background: #e2e5fe;
+    padding: 9px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.get-started-btn:hover,
+.get-started-btn:focus:hover{
+    color: white !important;
+    background: #3b4ef8;
+}
+
+/*Home Section CSS*/
+
+.home-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 70px !important;
+}
+
+.home-items .home-btn{
+    margin-right: 0;
+    padding: 12px 36px;
+}
+
+.home-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-banner img{
+    max-width: 60% !important;
+}
+
+/*About section CSS*/
+
+.about-section{
+    background-color: var(--section-bg-color);
+}
+
+.about-left h2{
+    color: white;
+    font-weight: bold;
+    font-size: var(--h2-size) !important;
+    line-height: 2rem;
+}
+
+.about-left p{
+    font-size: 1rem !important;
+    color: white;
+}
+
+.about-left a,
+.about-left a:focus{
+    color: white !important;
+    padding: 8px 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.about-left a:hover,
+.about-left a:focus:hover{
+    color: white;
+}
+
+.about-right i{
+    font-size: 30px;
+    color: white;
+}
+
+.about-right h3{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem !important;
+}
+
+.about-right p{
+    font-size: 1rem !important;
+    color: white;
+}
+
+.about-right-one,
+.about-right-two{
+    display: flex !important;
+}
+
+.right-div{
+    padding-left: 10px;
+}
+
+/*Client section CSS*/
+
+.clients{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.client{
+    display: inline-block !important;
+    max-width: 45% !important;
+    padding: 15px 0px !important;
+}
+
+/*Features section CSS*/
+
+.feature-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-title h2{
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.feature-title p{
+    font-size: 1rem !important;
+    text-align: center;
+}
+
+.f-common h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.f-text1 p{
+    font-size: 1rem !important;
+}
+
+/*Steps section CSS*/
+
+/* .border-rht{
+    border-right: 1px solid #aaaaaa;
+}
+
+.border-btm{
+    border-bottom: 1px solid #aaaaaa;
+} */
+
+.s-common span,
+.s-common h3,
+.s-common p{
+    margin-left: 20px;
+}
+
+.s-common span{
+    font-size: 1.5rem !important;
+    /* font-weight: bold; */
+    color: #3b4ef8;
+}
+
+.s-common p{
+    font-size: 1.1rem !important;
+    color: #aaaaaa !important;
+}
+
+/*Services section CSS*/
+
+.services-section{
+    background-color: #2d405f;
+}
+
+.services-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-title h2{
+    font-weight: bold;
+    color: white;
+}
+
+.services-title p{
+    font-size: 1rem !important;
+    text-align: center;
+    color: white;
+}
+
+.services-cards{
+    justify-content: center !important;
+}
+
+.card-common{
+    border: none !important;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.card-common:hover{
+    transform: scale(1.075);
+}
+
+.card-common, .common-body{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.card-common i{
+    font-size: 32px;
+    color: rgb(45, 64, 95);
+    padding: 20px;
+}
+
+.my-cards{
+    display: flex;
+    align-items: center;
+}
+
+.common-body a,
+.common-body a:focus,
+.common-body a:hover{
+    font-size: 1.2rem;
+    color: var(--heading-color) !important;
+    font-weight: bold;
+}
+
+.common-body p{
+    text-align: center !important;
+    font-size: 1.10rem !important;
+}
+
+/*Team section CSS*/
+
+.team-card-cont{
+    justify-content: center !important;
+}
+
+.team-cards img{
+    border-radius: 5px !important;
+}
+
+.team-common h3{
+    text-align: center;
+    position: relative;
+    bottom: 22px;
+    z-index: -1;
+    font-size: 1.20rem;
+    font-weight: bold;
+    color: var(--heading-color);
+    transition: 0.4s ease-in-out;
+}
+
+.team-cards{
+    transition: 0.4s ease-in-out;
+}
+
+.team-cards:hover{
+    transform: translateY(-25px);
+}
+
+.team-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-title h2{
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.team-title p{
+    font-size: 1rem !important;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.team-cards{
+    border: none !important;
+}
+
+/*Pricing section CSS*/
+
+.pricing-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-title h2{
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.pricing-title p{
+    font-size: 1rem !important;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.pricing-section{
+    background-color: #f6f8fb !important;
+}
+
+.pricing-cards{
+    border: none !important;
+    transition: 0.4s;
+}
+
+.pricing-cards:hover{
+    transform: translateY(-15px) !important;
+    border-bottom: 3px solid var(--heading-color) !important;
+}
+
+.common-body h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.common-body .price-tag{
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.common-body .time-duration{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.common-body .price-btn,
+.common-body .price-btn:focus{
+    margin: 0px;
+    color: var(--btn-fg-color) !important;
+    font-weight: normal;
+    padding: 8px 30px !important;
+    font-size: 1rem !important;
+}
+
+.common-body .price-btn:hover,
+.common-body .price-btn:focus:hover{
+    color: white !important;
+    font-weight: normal;
+}
+
+.second-card-body{
+    color: white !important;
+    background-color: var(--heading-color);
+}
+
+/*FAQ section CSS*/
+
+.faq-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-title h2{
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.faq-title p{
+    font-size: 1rem !important;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.ques-icon{
+    cursor: pointer;
+}
+
+.faq-section .ques{
+    color: var(--btn-fg-color);
+    cursor: pointer;
+}
+
+.faq-section .ans{
+    display: none;
+    font-size: 1rem !important;
+}
+
+/*Contact section CSS*/
+
+.contact-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title h2{
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.contact-title p{
+    font-size: 1rem !important;
+    text-align: center;
+    color: var(--heading-color);
+}
+
+.contact-section{
+    background-color: #f6f8fb !important;
+}
+
+.address{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.contact-left i{
+    font-size: 24px !important;
+    color: var(--btn-fg-color);
+}
+
+.contact-left h3{
+    font-size: 1.30rem !important;
+    font-weight: bold !important;
+}
+
+.address p, .contact-info p{
+    font-size: 1rem !important;
+    margin: 0;
+}
+
+.contact-info{
+    display: flex;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-right label{
+    font-weight: bold;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus{
+    outline: none !important;
+}
+
+.contact-right{
+    background-color: white !important;
+    border-radius: 10px !important;
+}
+
+.contact-right .send-msg{
+    margin: 0;
+}
+
+/*Footer section CSS*/
+
+.footer-section p{
+    text-align: center;
+    font-size: 1rem !important;
+    margin: 0;
+}
+
+.footer-section p i{
+    color: #3b4ef8;
+    font-size: 16px;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a i,
+.social-icons a i:focus{
+    color: #3b4ef8;
+}
+
+.social-icons a i:hover,
+.social-icons a i:focus:hover{
+    color: #3b4ef8;
+}
+
+.social-icons span i{
+    padding: 0px 20px;
+    font-size: 28px;
+}
+
